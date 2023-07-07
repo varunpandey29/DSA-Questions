@@ -1,0 +1,31 @@
+/*Write a Program to Calculate the fuel consumption of your vehicle. The program should ask the user to Enter the quantity of petrol to fill up the tank and 
+the distance covered till the tank goes dry. Calculate the fuel consumption and display it in the format (liters per 100 kilometers). 
+Convert the same result to the u.s. style of miles per gallon and display the result. If the quantity or distance is zero or negative display ” is an invalid input”.*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    float n;
+    cout<<"Enter the no of liters to fill the tank:-"<<endl;
+    cin>>n;
+    
+    float x;
+    cout<<"Enter the distance covered:-"<<endl;
+    cin>>x;
+    
+    //Calculate liters/100KM
+    cout<<"Liters/100KM - ";
+    float ans1 = (n/x)*100;
+    printf("%.2f\n", ans1);
+    
+    //Calculate Miles/gallons
+    float miles = x/1.6;
+    float gallon = n/3.7;
+    cout<<"Miles/gallons - ";
+    float ans2 = miles/gallon;
+    printf("%.2f\n", ans2);
+
+    return 0;
+}
+
