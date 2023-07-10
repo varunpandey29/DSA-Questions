@@ -2,6 +2,7 @@
 the distance covered till the tank goes dry. Calculate the fuel consumption and display it in the format (liters per 100 kilometers). 
 Convert the same result to the u.s. style of miles per gallon and display the result. If the quantity or distance is zero or negative display ” is an invalid input”.*/
 
+
 #include <iostream>
 using namespace std;
 
